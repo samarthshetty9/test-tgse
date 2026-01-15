@@ -1,11 +1,11 @@
-import Navbar from '../components/Navbar';
-import  Hero  from '../components/Hero';
-import  Stats  from '../components/Stats';
-import  Features  from '../components/Features';
-import  Footer  from '../components/Footer';
-import  Experience  from '@/components/Experience';
-import  Testimonials  from '../components/Testimonials';
-import CTASection from '@/components/CTASection';
+import Navbar from '@/components/layout/Navbar';
+import Hero from '@/components/home/Hero';
+import Stats from '@/components/home/Stats';
+import Features from '@/components/home/Features';
+import Experience from '@/components/home/Experience';
+import Testimonials from '@/components/home/Testimonials';
+import CTASection from '@/components/home/CTASection';
+import Footer from '@/components/layout/Footer';
 
 export default function LandingPage() {
   return (
@@ -13,13 +13,11 @@ export default function LandingPage() {
       <Navbar />
       <main>
         <Hero />
-        
         <Features />
         <Stats />
-        <Experience/>
-        <Testimonials/>
-        <CTASection/>
-        {/* Add more section components here */}
+        <Experience />
+        <Testimonials />
+        <CTASection />
       </main>
       <Footer />
     </div>
