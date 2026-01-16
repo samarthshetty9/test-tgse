@@ -23,7 +23,7 @@ const CTASection = () => {
 
           {/* Primary Button: White background with Maroon text */}
           {/* text-[#721D32] is the hex for rgb(114, 29, 50) */}
-          <Link href="/admissions" className="bg-white text-[#721D32] font-semibold py-3 px-8 rounded shadow-sm hover:bg-gray-100 hover:-translate-y-0.5 transition-all duration-300">
+          <Link href="/contact" className="bg-white text-[#721D32] font-semibold py-3 px-8 rounded shadow-sm hover:bg-gray-100 hover:-translate-y-0.5 transition-all duration-300">
             Start Application
           </Link>
 
