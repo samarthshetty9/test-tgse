@@ -6,9 +6,9 @@ import PageHero from '@/components/shared/PageHero';
 
 export default function AdmissionsPage() {
     return (
-        <>
+        <div className="flex flex-col min-h-screen">
             <Navbar />
-            <main className="pt-20">
+            <main className="flex-grow pt-20">
                 <PageHero
                     title="Join Our"
                     highlight="Family"
@@ -22,6 +22,6 @@ export default function AdmissionsPage() {
                 <Admissions />
             </main>
             <Footer />
-        </>
+        </div>
     );
 }

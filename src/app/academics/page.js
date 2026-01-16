@@ -5,17 +5,17 @@ import PageHero from '@/components/shared/PageHero';
 
 export default function AcademicsPage() {
     return (
-        <>
+        <div className="flex flex-col min-h-screen">
             <Navbar />
-            <main className="pt-20">
+            <main className="flex-grow pt-20">
                 <PageHero
-                    title="Academic"
-                    highlight="Excellence"
-                    subtitle="Our rigorous yet holistic curriculum empowers students to explore their interests, challenge themselves, and prepare for success in an ever-changing global landscape. From Montessori roots to competitive board exams, we support every step."
+                    title="Our"
+                    highlight="Curriculum"
+                    subtitle="We offer a robust academic program integrated with co-curricular activities to ensure holistic development. From early years to high school, our students are challenged to think critically and creatively."
                 />
                 <Academics />
             </main>
             <Footer />
-        </>
+        </div>
     );
 }

@@ -5,9 +5,9 @@ import PageHero from '@/components/shared/PageHero';
 
 export default function ContactPage() {
     return (
-        <>
+        <div className="flex flex-col min-h-screen">
             <Navbar />
-            <main className="pt-20">
+            <main className="flex-grow pt-20">
                 <PageHero
                     title="Contact"
                     highlight="Us"
@@ -16,6 +16,6 @@ export default function ContactPage() {
                 <Contact />
             </main>
             <Footer />
-        </>
+        </div>
     );
 }

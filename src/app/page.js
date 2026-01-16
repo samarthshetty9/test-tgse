@@ -9,9 +9,9 @@ import Footer from '@/components/layout/Footer';
 
 export default function LandingPage() {
   return (
-    <div className="min-h-screen font-sans text-gray-800 bg-white">
+    <div className="min-h-screen font-sans text-gray-800 bg-white flex flex-col">
       <Navbar />
-      <main>
+      <main className="flex-grow">
         <Hero />
         <Features />
         <Stats />
