@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const Hero = () => {
   return (
-    <section className="bg-gradient-hero relative min-h-[650px] flex items-center justify-center overflow-hidden pt-32 pb-20 md:py-0">
+    <section className="bg-gradient-hero relative min-h-[650px] flex items-center justify-center overflow-hidden pt-28 pb-20 md:py-0">
 
       {/* 1. BACKGROUND GLOWS (Design) */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-[#F3D03E] rounded-full blur-3xl opacity-10 -translate-x-1/2 -translate-y-1/2"></div>
@@ -61,11 +61,13 @@ const Hero = () => {
             Book a Visit
           </Link>
         </div>
-        <div className="animate-on-scroll mt-12 md:mt-16 animate-bounce opacity-70 cursor-pointer text-white">
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7" />
-          </svg>
-        </div>
+      </div>
+
+      {/* Scroll Indicator - Reverted to Absolute but Centered */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce opacity-70 cursor-pointer text-white z-20">
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7" />
+        </svg>
       </div>
     </section>
   );
