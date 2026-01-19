@@ -1,6 +1,6 @@
 import React from 'react';
 import MissionVision from './MissionVision';
-import PrincipalMessage from './PrincipalMessage';
+import FoundersMessage from './FoundersMessage';
 
 const AboutUs = () => {
     return (
@@ -13,10 +13,10 @@ const AboutUs = () => {
             <div className="max-w-7xl mx-auto px-8 relative z-10 pt-16">
 
                 {/* Content Grid */}
-                <div className="grid md:grid-cols-2 gap-16 items-center">
+                <div className="grid md:grid-cols-2 gap-16 items-start">
 
                     {/* Left: Image (Kept inline as it's layout specific) */}
-                    <div className="relative group">
+                    <div className="relative group sticky top-24">
                         <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border-4 border-white transform transition-transform duration-500 group-hover:scale-[1.02]">
                             <img
                                 src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1000&auto=format&fit=crop"
@@ -37,10 +37,18 @@ const AboutUs = () => {
                     </div>
 
                     {/* Right: Text Content */}
-                    <MissionVision />
+                    <div className="space-y-8">
+                        <div>
+                            <h2 className="text-4xl font-serif font-bold text-[#5D1528] mb-6">About Us</h2>
+                            <p className="text-gray-600 leading-relaxed text-lg">
+                                Excellent Group of Institutions, established in 1996, is one of Karnataka’s most trusted education networks, having educated and empowered over one lakh students across its schools, PU colleges, NEET academy, and Sainik/Navodaya coaching centers. With a strong presence in Dharwad, Hubli–Dharwad Highway, Bijapur, and Bagalkote, we serve more than current students through value-based schooling, competitive exam training, and modern, technology-enabled learning environments. Rooted in discipline, academic excellence, and a mission to deliver accessible quality education, the institution continues to grow with a vision to transform student futures and strengthen the educational landscape of Karnataka.
+                            </p>
+                        </div>
+                        <MissionVision />
+                    </div>
                 </div>
 
-                <PrincipalMessage />
+                <FoundersMessage />
 
             </div>
         </section>

@@ -12,48 +12,33 @@ const CurriculumTabs = () => {
 
     const curriculumData = {
         primary: {
-            title: "Primary Years (Grades 1-5)",
-            description: "Building strong foundations through engaging, activity-based learning.",
+            title: "Primary Grades (1-5)",
+            description: "Integrated curriculum",
             image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=800&auto=format&fit=crop",
             subjects: [
-                { name: "English Language & Lit", icon: <BookOpen className="w-6 h-6" /> },
+                { name: "Sainik School Coaching", icon: <Troph className="w-6 h-6" /> },
+                { name: "Navodaya Coaching", icon: <BookOpen className="w-6 h-6" /> },
+                { name: "Foundational Course", icon: <Brain className="w-6 h-6" /> },
+                { name: "English Language", icon: <Languages className="w-6 h-6" /> },
                 { name: "Mathematics", icon: <Calculator className="w-6 h-6" /> },
-                { name: "Science & Nature", icon: <FlaskConical className="w-6 h-6" /> },
+                { name: "Science", icon: <FlaskConical className="w-6 h-6" /> },
                 { name: "Social Studies", icon: <Globe className="w-6 h-6" /> },
-                { name: "Second Language", icon: <Languages className="w-6 h-6" /> },
-                { name: "Art & Craft", icon: <Palette className="w-6 h-6" /> },
-                { name: "Music & Movement", icon: <Music className="w-6 h-6" /> },
-                { name: "Physical Education", icon: <Troph className="w-6 h-6" /> }
+                { name: "Co-Curricular", icon: <Palette className="w-6 h-6" /> },
             ]
         },
-        middle: {
-            title: "Middle Years (Grades 6-8)",
-            description: "Transitioning to concept-based learning with a focus on inquiry and critical thinking.",
+        highschool: {
+            title: "Highschool (6-8)",
+            description: "Integrated curriculum",
             image: "https://images.unsplash.com/photo-1544531586-fde5298cdd40?q=80&w=800&auto=format&fit=crop",
             subjects: [
-                { name: "English Literature", icon: <BookOpen className="w-6 h-6" /> },
-                { name: "Advanced Mathematics", icon: <Calculator className="w-6 h-6" /> },
-                { name: "Physics, Chem, Bio", icon: <FlaskConical className="w-6 h-6" /> },
-                { name: "History & Civics", icon: <Globe className="w-6 h-6" /> },
+                { name: "NEET Foundation", icon: <FlaskConical className="w-6 h-6" /> },
+                { name: "JEE Foundation", icon: <Calculator className="w-6 h-6" /> },
+                { name: "Mathematics", icon: <Calculator className="w-6 h-6" /> },
+                { name: "Science", icon: <FlaskConical className="w-6 h-6" /> },
+                { name: "Social Science", icon: <Globe className="w-6 h-6" /> },
+                { name: "English", icon: <BookOpen className="w-6 h-6" /> },
                 { name: "Computer Science", icon: <Monitor className="w-6 h-6" /> },
-                { name: "Third Language", icon: <Languages className="w-6 h-6" /> },
-                { name: "Robotics", icon: <MousePointer className="w-6 h-6" /> },
                 { name: "Life Skills", icon: <Brain className="w-6 h-6" /> }
-            ]
-        },
-        senior: {
-            title: "Senior Years (Grades 9-12)",
-            description: "Specialized streams promoting academic rigour and deeper understanding for career readiness.",
-            image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=800&auto=format&fit=crop",
-            subjects: [
-                { name: "English Core", icon: <BookOpen className="w-6 h-6" /> },
-                { name: "Mathematics / Applied Math", icon: <Calculator className="w-6 h-6" /> },
-                { name: "Physics / Accountancy", icon: <FlaskConical className="w-6 h-6" /> },
-                { name: "Chemistry / Business Studies", icon: <Briefcase className="w-6 h-6" /> },
-                { name: "Biology / Economics", icon: <Globe className="w-6 h-6" /> },
-                { name: "Computer Science / IP", icon: <Monitor className="w-6 h-6" /> },
-                { name: "Psychology", icon: <Brain className="w-6 h-6" /> },
-                { name: "Entrepreneurship", icon: <Troph className="w-6 h-6" /> }
             ]
         }
     };
@@ -62,7 +47,7 @@ const CurriculumTabs = () => {
         <>
             {/* 1. TAB NAVIGATION */}
             <div className="flex flex-wrap justify-center gap-4 mb-16">
-                {['primary', 'middle', 'senior'].map((tab) => (
+                {['primary', 'highschool'].map((tab) => (
                     <button
                         key={tab}
                         onClick={() => setActiveTab(tab)}
@@ -113,7 +98,7 @@ const CurriculumTabs = () => {
                     />
                     {/* Badge */}
                     <div className="absolute top-6 left-6 bg-white/90 backdrop-blur px-6 py-2 rounded-full text-[#5D1528] font-bold shadow-lg border-l-4 border-[#F3D03E]">
-                        {activeTab === 'senior' ? 'CBSE & IB Options' : 'Integrated Curriculum'}
+                        {activeTab === 'highschool' ? 'NEET & JEE Foundation' : 'Integrated Curriculum'}
                     </div>
                 </div>
 

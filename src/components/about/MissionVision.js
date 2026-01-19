@@ -10,8 +10,8 @@ const MissionVision = () => {
                     Our Mission
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                    To provide a safe and stimulating environment where students are challenged to reach their full potential
-                    academically, socially, and emotionally, preparing them to be responsible global citizens.
+                    To provide quality education, strong values, and the right guidance so every student can
+                    discover their potential and achieve success in academics and life.
                 </p>
             </div>
 
@@ -22,8 +22,8 @@ const MissionVision = () => {
                     Our Vision
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                    To be a premier institution recognized for academic excellence, innovation in teaching, and
-                    a commitment to fostering a community of lifelong learners and compassionate leaders.
+                    To shape confident, skilled, and responsible students who are ready for the future and
+                    contribute positively to society.
                 </p>
             </div>
 

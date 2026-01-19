@@ -68,6 +68,7 @@ const Navbar = () => {
             <Link href="/" className={getLinkClasses('/')}>Home</Link>
             <Link href="/about-us" className={getLinkClasses('/about-us')}>About Us</Link>
             <Link href="/academics" className={getLinkClasses('/academics')}>Academics</Link>
+            <Link href="/gallery" className={getLinkClasses('/gallery')}>Gallery</Link>
             <Link href="/admissions" className={getLinkClasses('/admissions')}>Admissions</Link>
             <Link href="/contact" className={getLinkClasses('/contact')}>Contact</Link>
           </div>
@@ -95,6 +96,7 @@ const Navbar = () => {
           <Link href="/" onClick={() => setIsMenuOpen(false)} className={`py-3 border-b border-gray-50 text-lg ${isActive('/') ? 'text-[#5D1528] font-bold' : 'text-gray-700 font-medium'}`}>Home</Link>
           <Link href="/about-us" onClick={() => setIsMenuOpen(false)} className={`py-3 border-b border-gray-50 text-lg ${isActive('/about-us') ? 'text-[#5D1528] font-bold' : 'text-gray-700 font-medium'}`}>About Us</Link>
           <Link href="/academics" onClick={() => setIsMenuOpen(false)} className={`py-3 border-b border-gray-50 text-lg ${isActive('/academics') ? 'text-[#5D1528] font-bold' : 'text-gray-700 font-medium'}`}>Academics</Link>
+          <Link href="/gallery" onClick={() => setIsMenuOpen(false)} className={`py-3 border-b border-gray-50 text-lg ${isActive('/gallery') ? 'text-[#5D1528] font-bold' : 'text-gray-700 font-medium'}`}>Gallery</Link>
           <Link href="/admissions" onClick={() => setIsMenuOpen(false)} className={`py-3 border-b border-gray-50 text-lg ${isActive('/admissions') ? 'text-[#5D1528] font-bold' : 'text-gray-700 font-medium'}`}>Admissions</Link>
           <Link href="/contact" onClick={() => setIsMenuOpen(false)} className={`py-3 border-b border-gray-50 text-lg ${isActive('/contact') ? 'text-[#5D1528] font-bold' : 'text-gray-700 font-medium'}`}>Contact</Link>
 

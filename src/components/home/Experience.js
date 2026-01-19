@@ -4,14 +4,14 @@ import React from 'react';
 
 const Experience = () => (
   <section className="py-24 px-8 max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center overflow-hidden">
-    
+
     {/* --- LEFT SIDE: TEXT CONTENT --- */}
     <div className="order-2 md:order-1">
       <h3 className="animate-on-scroll text-4xl font-serif font-bold text-[#5D1528] mb-6">
-        A Complete Educational <br/>
+        A Complete Educational <br />
         <span className="text-[#F3D03E]">Experience</span>
       </h3>
-      
+
       <p className="animate-on-scroll text-gray-600 mb-10 text-lg leading-relaxed" style={{ animationDelay: '0.1s' }}>
         At TGSE, we believe in providing a comprehensive education that prepares students for the challenges of tomorrow, blending academic rigor with character development.
       </p>
@@ -19,15 +19,14 @@ const Experience = () => (
       {/* Interactive List */}
       <ul className="space-y-4">
         {[
-          'Internationally recognized curriculum',
           'Small class sizes for personalized attention',
           'Advanced science and computer labs',
           'Extensive sports and extracurricular programs',
           'Regular parent-teacher communication',
           'Safe and supportive learning environment'
         ].map((text, i) => (
-          <li 
-            key={i} 
+          <li
+            key={i}
             className="animate-on-scroll flex items-center gap-4 text-gray-700 font-medium group cursor-pointer"
             style={{ animationDelay: `${0.2 + (i * 0.05)}s` }}
           >
@@ -37,7 +36,7 @@ const Experience = () => (
                 <polyline points="20 6 9 17 4 12"></polyline>
               </svg>
             </div>
-            
+
             {/* Text shifts right on hover */}
             <span className="group-hover:translate-x-1 transition-transform duration-300 group-hover:text-[#5D1528]">
               {text}
@@ -47,14 +46,14 @@ const Experience = () => (
       </ul>
 
       <button className="btn-shine mt-12 bg-[#5D1528] text-white px-10 py-4 rounded font-bold flex items-center gap-2 hover:bg-[#4a1120] transition-colors shadow-lg hover:-translate-y-1 transform duration-300">
-        Explore Our Programs 
+        Explore Our Programs
         <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
       </button>
     </div>
-    
+
     {/* --- RIGHT SIDE: LAYERED VISUALS --- */}
     <div className="relative order-1 md:order-2">
-      
+
       {/* 1. The Gold Square Accent (Back Layer) */}
       <div className="absolute -top-10 -right-10 w-64 h-64 bg-[#F3D03E]/20 rounded-full blur-3xl -z-10"></div>
       <div className="absolute top-8 right-8 w-full h-full border-2 border-[#F3D03E] rounded-3xl z-0 transform translate-x-4 translate-y-4"></div>
@@ -62,11 +61,11 @@ const Experience = () => (
       {/* 2. Main Image Container */}
       {/* Replaced emoji box with a styled 'Image Placeholder' that looks like a photo */}
       <div className="relative rounded-3xl overflow-hidden shadow-2xl transform hover:scale-[1.01] transition-transform duration-500 z-10 bg-gray-200 aspect-[4/5] md:aspect-square">
-        
+
         {/* Placeholder for Main Image (Classroom/Student) */}
         {/* <Image src={studentImg} fill className="object-cover" /> */}
-        <img 
-          src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=2000&auto=format&fit=crop" 
+        <img
+          src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=2000&auto=format&fit=crop"
           alt="Student Learning"
           className="w-full h-full object-cover"
         />
