@@ -65,7 +65,7 @@ const Experience = () => (
         {/* Placeholder for Main Image (Classroom/Student) */}
         {/* <Image src={studentImg} fill className="object-cover" /> */}
         <img
-          src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=2000&auto=format&fit=crop"
+          src="/gallery/complete.jpeg"
           alt="Student Learning"
           className="w-full h-full object-cover"
         />

@@ -18,6 +18,9 @@ const galleryImages = [
     { src: '/gallery/IMG_20190720_115815.jpg', alt: 'Student Activities 3' },
     { src: '/gallery/WhatsApp Image 2026-01-19 at 2.11.11 PM.jpeg', alt: 'School Moment 1' },
     { src: '/gallery/WhatsApp Image 2026-01-19 at 2.11.15 PM (1).jpeg', alt: 'School Moment 2' },
+    { src: '/1.jpeg', alt: 'School Photo 1' },
+    { src: '/2.jpeg', alt: 'School Photo 2' },
+    { src: '/3.jpg', alt: 'School Photo 3' },
 ];
 
 const Gallery = () => {

@@ -19,7 +19,7 @@ const AboutUs = () => {
                     <div className="relative group sticky top-24">
                         <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border-4 border-white transform transition-transform duration-500 group-hover:scale-[1.02]">
                             <img
-                                src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1000&auto=format&fit=crop"
+                                src="/gallery/IMG_3599.jpg"
                                 alt="School Building"
                                 className="w-full h-[500px] object-cover"
                             />
