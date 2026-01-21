@@ -11,7 +11,7 @@ export default function AboutPage() {
                 <PageHero
                     title="About"
                     highlight="Us"
-                    subtitle="Since 1995, The Global School of Excellence has been dedicated to cultivating an environment where academic rigor meets character development. Discover our history, our values, and the people who make our community special."
+                    subtitle="Founded in 1996, Excellent Group of Institutions began with a clear vision to make quality education accessible while nurturing discipline and academic excellence. Guided by this purpose, the institution has steadily grown over the years, adapting to modern learning needs and continuing to thrive as a trusted name in Karnataka's educational landscape."
                 />
                 <AboutUs />
             </main>

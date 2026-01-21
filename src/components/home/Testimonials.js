@@ -1,33 +1,33 @@
 import React from 'react';
 
 const testimonials = [
-  { 
-    name: 'Sarah Johnson', 
-    role: 'Parent of Grade 5 Student', 
-    initials: 'SJ',
-    quote: "TGSE has transformed my child's approach to learning. The teachers are incredibly supportive and the environment fosters genuine curiosity." 
+  {
+    name: 'Rajesh Kulkarni',
+    role: 'Parent',
+    initials: 'RK',
+    quote: "TGSE has transformed my child's approach to learning. The teachers are incredibly supportive and the environment fosters genuine curiosity."
   },
-  { 
-    name: 'Michael Chen', 
-    role: 'Grade 10 Student', 
-    initials: 'MC',
-    quote: "The holistic education approach here has helped me discover my passion for science while also excelling in sports and arts." 
+  {
+    name: 'Vinod K',
+    role: 'Parent',
+    initials: 'VK',
+    quote: "The holistic education approach here has helped my son discover his passion for science while also excelling in sports and arts. We couldn't be happier with his growth."
   },
-  { 
-    name: 'Priya Patel', 
-    role: 'Parent of Grade 3 Student', 
-    initials: 'PP',
-    quote: "We looked at many schools, but TGSE stood out for its values. Seeing my daughter excited to go to school every morning is the best proof." 
+  {
+    name: 'Rajashree Patil',
+    role: 'Parent',
+    initials: 'RP',
+    quote: "We looked at many schools, but TGSE stood out for its values. Seeing my daughter excited to go to school every morning is the best proof."
   }
 ];
 
 const Testimonials = () => (
   // Background: Cream (#FDFBF7) with a subtle pattern overlay
   <section className="relative bg-[#FDFBF7] py-24 px-8 overflow-hidden">
-    
+
     {/* Background Pattern: Faint Maroon Dots */}
-    <div 
-      className="absolute inset-0 opacity-[0.03]" 
+    <div
+      className="absolute inset-0 opacity-[0.03]"
       style={{
         backgroundImage: 'radial-gradient(#5D1528 1px, transparent 1px)',
         backgroundSize: '30px 30px'
@@ -46,8 +46,8 @@ const Testimonials = () => (
     {/* Grid: Changed to 3 columns for better balance */}
     <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
       {testimonials.map((t, i) => (
-        <div 
-          key={i} 
+        <div
+          key={i}
           className="animate-on-scroll bg-white p-10 rounded-2xl shadow-sm border border-gray-100 relative group hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
           style={{ animationDelay: `${0.2 + (i * 0.1)}s` }}
         >
@@ -68,7 +68,7 @@ const Testimonials = () => (
 
           {/* UPGRADE 2: User Profile Section */}
           <div className="flex items-center gap-4 relative z-10">
-            
+
             {/* Avatar Placeholder: Circle with Initials */}
             <div className="w-12 h-12 rounded-full bg-[#5D1528] flex items-center justify-center text-white font-bold text-sm shadow-md">
               {t.initials}
