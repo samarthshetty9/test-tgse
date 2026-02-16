@@ -1,25 +1,31 @@
 import { Playfair_Display, Lato } from 'next/font/google';
 
 // 1. Configure the fonts
-const playfair = Playfair_Display({ 
+const playfair = Playfair_Display({
   subsets: ['latin'],
   variable: '--font-playfair', // Defines the CSS variable name
   display: 'swap',
 });
 
-const lato = Lato({ 
-  weight: ['400', '700'], 
+const lato = Lato({
+  weight: ['400', '700'],
   subsets: ['latin'],
   variable: '--font-lato',     // Defines the CSS variable name
   display: 'swap',
 });
+
+
+export const metadata = {
+  title: 'TGSE',
+  description: 'The Global School of Excellence',
+};
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
         <script src="https://cdn.tailwindcss.com"></script>
-        
+
         {/* Your Existing Variables */}
         <style>{`
           :root {
@@ -44,7 +50,7 @@ export default function RootLayout({ children }) {
         `}</style>
 
         {/* Tailwind Configuration */}
-        <script 
+        <script
           dangerouslySetInnerHTML={{
             __html: `
               tailwind.config = {
@@ -66,10 +72,10 @@ export default function RootLayout({ children }) {
                 }
               }
             `
-          }} 
+          }}
         />
       </head>
-      
+
       {/* 3. Inject font variables into the body */}
       <body className={`antialiased ${playfair.variable} ${lato.variable}`}>
         {children}
